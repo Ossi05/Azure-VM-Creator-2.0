@@ -8,8 +8,6 @@ Deploy Azure virtual machines automatically in Python
 
 ##
 
-<h3><p align="center">Info</p></h3>
-
 <i>Create easily Windows or Linux VM and delete it automatically.</i>
 
 ##
