@@ -3,7 +3,7 @@ Deploy Azure virtual machines automatically in Python
 
 
 # This is still in under development
-![image](https://github.com/Ossi05/Azure-VM-Creator-2.0/assets/77546709/c50e3c47-a944-49d2-bde7-640fb61e1c26)
+![image](https://github.com/Ossi05/Azure-VM-Creator-2.0/assets/77546709/073948e1-bd07-44d0-84f2-fa6c421976ed)
 ![image](https://github.com/Ossi05/Azure-VM-Creator-2.0/assets/77546709/815aaea8-8adf-4346-a8d1-a30fe6c525b6)
 
 
