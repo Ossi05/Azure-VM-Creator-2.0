@@ -4,6 +4,18 @@ Deploy Azure virtual machines automatically in Python
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FOssi05%2FAzure-VM-Creator-2.0&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitors&edge_flat=false)](https://hits.seeyoufarm.com)
 # This is still in under development
 
+### Features
+
+- Create Windows or Linux VM.
+- Choose amount of ram
+- Delete VM
+- Easy to edit settings
+  - Location
+  - username
+  - password
+
+##
+
 # How to use?
 
 # 1. Download the Project
