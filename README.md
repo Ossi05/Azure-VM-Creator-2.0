@@ -35,7 +35,6 @@ pip install -r requirements.txt
 # 4. Run the Python Script
 ```
 python main.py
-
 ```
 
 # 5. Add your Azure Subscription ID
