@@ -40,9 +40,11 @@ python main.py
 
 ```
 
-# 5. Edit Settings
-Choose option 3 Edit settings and put your Azure subscription id there. You can edit also other settings if you want
+# 5. Add your Azure Subscription ID
 You can get the id from [Azure Portal Subscriptions](https://portal.azure.com/#view/Microsoft_Azure_Billing/SubscriptionsBladeV1)
+![image](https://github.com/Ossi05/Azure-VM-Creator-2.0/assets/77546709/fd94a9b0-e67b-4296-92f7-e66ad437b13b)
+
+
 
 # 6. Now try to create a vm
 
