@@ -7,6 +7,7 @@ import pyfiglet
 import os
 from time import sleep
 from DeleteVM import DeleteVM
+import webbrowser
 
 config = None
 
@@ -15,6 +16,7 @@ def main():
     global config
     config = configparser.ConfigParser()
     config.read("config.ini")     
+    CheckAzureID()
     PrintCLI()   
 
 def print_title(title):
@@ -176,6 +178,29 @@ def HandleVMDelete():
             print(Fore.LIGHTRED_EX + "  Please choose a valid option" + Style.RESET_ALL)
             sleep(1.5)
             continue
+
+def CheckAzureID():
+    while not config.get('AzureSettings', 'azure_id'):
+        try:
+            ClearScreen()
+            print(Fore.LIGHTYELLOW_EX + "Welcome! Please enter your Azure Subscription ID.")     
+            print("Find your Azure ID: https://portal.azure.com/#view/Microsoft_Azure_Billing/SubscriptionsBladeV1")
+            id = input("Azure ID: ")
+            if id == "":
+                raise Exception
+            sleep(1)
+            config.set('AzureSettings', 'azure_id', id)
+            config.write(open('config.ini', 'w'))
+            print("Thank you! Your Azure ID has been saved.")
+            print("You can update it later in the config.ini file.")
+            sleep(5)
+            print(Style.RESET_ALL)      
+        except Exception:
+            print(Fore.LIGHTRED_EX + "Please enter your Azure Subscription ID" + Style.RESET_ALL)
+            sleep(1.5)           
+            continue
+
+
 
 if __name__ == "__main__":
     main()

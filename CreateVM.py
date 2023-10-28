@@ -1,6 +1,7 @@
 from azure.identity import DefaultAzureCredential
 from VMInfo import GetVMInfo
 import os
+import colorama
 
 from VMCreation.CreateResourceGroup import CreateResourceGroup
 from VMCreation.CreateVirtualNetwork import CreateVirtualNetwork
@@ -12,6 +13,9 @@ from VMCreation.ConnectToVM import ConnectToVM
 
 def CreateVM():
     vmData = GetVMInfo()
+
+    # Set color to Fore.LIGHTYELLOW_EX
+    print(colorama.Fore.LIGHTYELLOW_EX)
 
     print(f"Creating {vmData.VMtype} virtual machine")
 
@@ -28,3 +32,4 @@ def CreateVM():
     nic_result = CreateNetworkInterfaceClient(network_client, vmData, subnet_result, ip_address_result)
     CreateVirtualMachine(credential, subscription_id, vmData, nic_result)
     ConnectToVM(ip_address_result, vmData)
+    print(colorama.Fore.RESET)
