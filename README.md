@@ -22,13 +22,11 @@ Deploy Azure virtual machines automatically in Python
 # 1. Download the Project
 ```
 git clone https://github.com/Ossi05/Azure-VM-in-Python.git
-
 ```
 
 # 2. Install Requirements
 ```
 pip install -r requirements.txt
-
 ```
 
 # 3. Install Azure CLI (Follow the official installation guide)
