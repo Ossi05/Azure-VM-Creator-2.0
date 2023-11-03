@@ -9,6 +9,7 @@ Deploy Azure virtual machines automatically in Python
 - Create Windows or Linux VM.
 - Choose amount of ram
 - Delete VM automatically
+- Automatically connect via RDP or SSH
 - Easy to use
 - Easy to edit settings for example:
   - Location
